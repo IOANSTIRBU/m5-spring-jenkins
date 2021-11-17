@@ -27,5 +27,12 @@ pipeline {
                 bat 'mvn site'
             }
         }
+        stage('Site'){
+            steps {
+                bat 'mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=IOANSTIRBU_m5-spring-jenkins'
+            }
+
+        }
+
     }
 }
