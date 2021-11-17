@@ -29,7 +29,7 @@ pipeline {
         }
         stage('Site'){
             steps {
-                bat 'mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=m5-maven-jenkins -Dsonar.login=089fd312edacc597bfa4b38a41b69aae634e214f -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=ioanstirbu'
+                bat 'mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=IOANSTIRBU_m5-spring-jenkins'
             }
 
         }
